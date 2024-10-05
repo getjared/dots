@@ -18,10 +18,3 @@ feh --bg-scale wallpapers/hydrac.jpg &
 
 # start rude
 exec rude
-
-# awesomewm for testing. .
-#exec awesome
-
-# sowm for testing
-#exec sowm
- 
