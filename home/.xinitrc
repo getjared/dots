@@ -9,7 +9,6 @@ xset r rate 250 25
 xsetroot -cursor_name left_ptr
 
 # startups
-#picom & # xrender composite
 sxhkd & # keyboard shortcut daemon
 
 # walls
