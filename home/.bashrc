@@ -1,10 +1,17 @@
 # core
 [[ $- != *i* ]] && return
 shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=2000
-HISTCONTROL=ignoreboth
+shopt -s autocd        # cd by typing directory name
+shopt -s cdspell       # autocorrect cd misspellings
+shopt -s direxpand     # expand directory names
+set -o vi              # vi mode in bash
 
+# history
+HISTSIZE=10000
+HISTFILESIZE=20000
+HISTCONTROL=ignoreboth:erasedups
+HISTIGNORE="ls:bg:fg:history:clear:exit"
+HISTTIMEFORMAT="%F %T "
 
 # prompt
 PS1='\[\e[48;5;236m\e[33m\]    \[\e[0m\] \[\e[34m\]\w \[\e[0m\] '
@@ -23,9 +30,18 @@ declare -A colors=(
 
 # motd
 echo -e "\n${colors[RED]}${colors[ITALIC]}Hey there, space cowboy${colors[NC]}\n"
+echo -e "${colors[BLUE]}$(date "+%A, %B %d")${colors[NC]}"
 
-# system aliases
+# env
+export EDITOR="vim"
+export VISUAL="vim"
+export PAGER="less"
+export LESS="-R"
+
+# sys
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls -lah'
 alias x='startx'
 alias please='sudo pacman -S'
 alias fuckoff='sudo pacman -R'
@@ -34,30 +50,40 @@ alias f='fetch'
 alias rel='xrdb merge .Xresources && kill -USR1 $(pidof st)'
 alias gofont='fc-cache -fv'
 alias gogo='source ~/.bashrc'
+alias df='df -h'
+alias free='free -h'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias p='ps aux | grep'
 
-# navigation aliases
+# nav
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias storeage='cd /mnt/storage/'
 alias prog='cd projects/'
 alias apps='cd .local/bin/'
 alias hk='cd .config/sxhkd'
 alias rude='cd projects/rude/'
 
-# build aliases
+# build
 alias m='make'
 alias mc='make clean'
 alias smi='sudo make install'
 alias smu='sudo make uninstall'
 
-# application aliases
+# applications
 alias r='ranger'
 alias l='leafpad'
 alias kickass='dosbox -conf ~/.dosbox/duke3d.conf'
+alias v='$EDITOR'
+alias :q='exit'
 
-# scripts
+# sh stuff
 alias g='sudo ~/.local/bin/gff.sh'
 alias clean='bash ~/.local/bin/cleaner.sh'
 alias irc='bash ~/.local/bin/sauron.sh -s irc.libera.chat -p 6667 -n getjared -c "#bash"'
 
-# date
+# pretty date
 alias d='echo -e "\033[1;31m$(date "+%a")\033[0m \033[1;32m$(date "+%b")\033[0m \033[1;33m$(date "+%d")\033[0m \033[1;34m$(date "+%T")\033[0m \033[1m$(date "+%Y")\033[0m"'
