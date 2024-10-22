@@ -29,8 +29,8 @@ declare -A colors=(
 )
 
 # motd
-echo -e "\n${colors[RED]}${colors[ITALIC]}Hey there, space cowboy${colors[NC]}\n"
-echo -e "${colors[BLUE]}$(date "+%A, %B %d")${colors[NC]}"
+echo -e "\n${colors[RED]}${colors[ITALIC]}Hey there, space cowboy${colors[NC]}"
+echo -e "${colors[BLUE]}${colors[ITALIC]}$(date "+%A, %B %d at %I:%M %p")${colors[NC]}\n"
 
 # env
 export EDITOR="vim"
