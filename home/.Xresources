@@ -5,7 +5,7 @@ Xft.hintstyle:	hintslight
 Xft.rgba:	rgb
 Xft.lcdfilter:	lcddefault
 
-st.font:         Commit Mono Nerd Font:style:regular:pixelsize=15
+st.font: Victor Mono Nerd Font:pixelsize=18
 
 
 ! window padding
@@ -14,37 +14,37 @@ st.borderpx: 20
 !- 0.1 to 0.9 = transparency
 st.alpha: 1.0
 
-*background: #0F0F0F     
+*background: #121212   
 *foreground: #C3C6D0    
 
-! Black + DarkGrey
+! black + darkgrey
 *color0:  #0F0F0F       
 *color8:  #5A5A70       
 
-! DarkRed + Red
+! darkred + red
 *color1:  #E06E6E       
 *color9:  #FF8787       
 
-! DarkGreen + Green
+! darkgreen + green
 *color2:  #4EA49F       
 *color10: #6FFFB3       
 
-! DarkYellow + Yellow
+! darkyellow + yellow
 *color3:  #E5C580       
 *color11: #FFE3A3       
 
-! DarkBlue + Blue
+! darkblue + blue
 *color4:  #89B4FA       
 *color12: #AFCBFF       
 
-! DarkMagenta + Magenta
+! darkmagenta + magenta
 *color5:  #B28DFF       
 *color13: #C6A8FF       
 
-! DarkCyan + Cyan
+! darkcyan + cyan
 *color6:  #70D6FF       
 *color14: #8AE4FF       
 
-! LightGrey + White
+! lightgrey + white
 *color7:  #C5C6C7       
 *color15: #FFFFFF       
