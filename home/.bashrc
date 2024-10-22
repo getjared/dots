@@ -84,6 +84,3 @@ alias :q='exit'
 alias g='sudo ~/.local/bin/gff.sh'
 alias clean='bash ~/.local/bin/cleaner.sh'
 alias irc='bash ~/.local/bin/sauron.sh -s irc.libera.chat -p 6667 -n getjared -c "#bash"'
-
-# pretty date
-alias d='echo -e "\033[1;31m$(date "+%a")\033[0m \033[1;32m$(date "+%b")\033[0m \033[1;33m$(date "+%d")\033[0m \033[1;34m$(date "+%T")\033[0m \033[1m$(date "+%Y")\033[0m"'
