@@ -78,9 +78,7 @@ alias r='ranger'
 alias l='leafpad'
 alias kickass='dosbox -conf ~/.dosbox/duke3d.conf'
 alias v='$EDITOR'
-alias :q='exit'
 
 # sh stuff
 alias g='sudo ~/.local/bin/gff.sh'
-alias clean='bash ~/.local/bin/cleaner.sh'
 alias irc='bash ~/.local/bin/sauron.sh -s irc.libera.chat -p 6667 -n getjared -c "#bash"'
