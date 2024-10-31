@@ -14,7 +14,7 @@ sxhkd & # keyboard shortcut daemon
 
 # walls
 #gifw /home/jared/projects/gifwall/walls/lotide.gif stretch &
-feh --bg-scale wallpapers/hydrac.jpg &
+feh --bg-scale wallpapers/beach.png &
 
 # start rude
 exec rude
