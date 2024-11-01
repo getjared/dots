@@ -7,44 +7,42 @@ Xft.lcdfilter:	lcddefault
 
 st.font: Victor Mono Nerd Font:pixelsize=18
 
-
 ! window padding
 st.borderpx: 20
-
 !- 0.1 to 0.9 = transparency
 st.alpha: 1.0
 
-*background: #121212   
-*foreground: #C3C6D0    
+*background: #0A0A0D   
+*foreground: #DBE0EA    
 
 ! black + darkgrey
-*color0:  #0F0F0F       
-*color8:  #5A5A70       
-
+*color0:  #131320       
+*color8:  #6A6A85 
+      
 ! darkred + red
-*color1:  #E06E6E       
-*color9:  #FF8787       
-
+*color1:  #E67D8E       
+*color9:  #FF9CAA 
+      
 ! darkgreen + green
-*color2:  #4EA49F       
-*color10: #6FFFB3       
-
+*color2:  #5CCFB0       
+*color10: #7DFFE0 
+      
 ! darkyellow + yellow
-*color3:  #E5C580       
-*color11: #FFE3A3       
-
+*color3:  #EAD091       
+*color11: #FFE9B3  
+     
 ! darkblue + blue
-*color4:  #89B4FA       
-*color12: #AFCBFF       
+*color4:  #8ABAFF       
+*color12: #B1D1FF       
 
 ! darkmagenta + magenta
-*color5:  #B28DFF       
-*color13: #C6A8FF       
-
+*color5:  #C59AFF       
+*color13: #DDB8FF    
+   
 ! darkcyan + cyan
-*color6:  #70D6FF       
-*color14: #8AE4FF       
-
+*color6:  #7DE3FF       
+*color14: #A1EDFF   
+    
 ! lightgrey + white
-*color7:  #C5C6C7       
-*color15: #FFFFFF       
+*color7:  #D0D3DA       
+*color15: #FFFFFF
